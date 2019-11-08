@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    background: lightblue;
+}
+
+.drawn {
+    border: 10px solid black;
+    border-image: url('./assets/handdrawn-border-v3.svg') 
+    72 /
+    50px 50px 50px 50px /
+    5px 5px 5px 5px
+    round;
+    padding: 2em;
+    width: 150px;
+    height: 100px;
+    background: blueviolet;
+}
