@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6F2EC;
+}
+
 .container {
     width: 100%;
     max-width: 1100px;
@@ -5,15 +13,35 @@
     background: lightblue;
 }
 
+.row {
+    display: flex;
+    width: 100%;
+    div {
+        margin: 0 2em;
+    }
+}
+
 .drawn {
     border: 10px solid black;
-    border-image: url('./assets/handdrawn-border-v3.svg') 
+    border-image: url('./assets/handdrawn-border-gap.svg') 
     72 /
     50px 50px 50px 50px /
     5px 5px 5px 5px
     round;
     padding: 2em;
-    width: 150px;
-    height: 100px;
     background: blueviolet;
+}
+
+.css-drawn {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 3px #41403E;
+    padding: 14px 25px;
+    background: transparent;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    transform: rotate(-1deg);
+    &:hover {
+        background: rgba(0, 0, 0, .3);
+    }
 }
